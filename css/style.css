@@ -2,7 +2,7 @@
 @blue: #DodgerBlue;
 
 body{
-  background-color: @blue;
+  background-color: dodgerblue;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,7 +15,7 @@ body{
   margin-top: -12px;
   
   &:after, 
-  &:before {
+  &:before{
      position: absolute;
   }
   
