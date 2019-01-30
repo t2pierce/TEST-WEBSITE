@@ -1,12 +1,12 @@
 @white: #ffffff;
 @blue: #DodgerBlue;
 
-body {
+body{
   background-color: @blue;
   font-family: 'Open Sans', sans-serif;
 }
 
-.loading {
+.loading{
   position: absolute;
   width: 110px;
   top: 40%;
@@ -19,7 +19,7 @@ body {
      position: absolute;
   }
   
-  &:after {
+  &:after{
     content: "Website";
     font-size: 72px;
     text-transform: uppercase;
@@ -30,7 +30,7 @@ body {
     left:0;
   }
   
-  &:before {
+  &:before{
     content: "Please wait.";
     font-size: 14px;
     font-weight: 600;
@@ -41,7 +41,8 @@ body {
     left: 245px;
   }
 }
-.text {
+
+.text{
   float: left;
   color: @white;
   font-size: 14px;
@@ -50,7 +51,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.bomb {
+.bomb{
 	border-radius: 50%;
 	background-color: @white;
 	display: block;
@@ -65,15 +66,15 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-.two {
+.two{
 	animation-delay: 150ms;
 }
 
-.three {
+.three{
 	animation-delay: 300ms;
 }
 
-@keyframes loading-bomb {
+@keyframes loading-bomb{
 	0% { height: 3px; width: 3px;}
 	25% { height: 7px; width: 7px;}
 	50% { height: 5px; width: 5px; }
