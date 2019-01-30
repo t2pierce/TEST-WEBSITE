@@ -1,82 +1,24 @@
-@white: #ffffff;
-@blue: #DodgerBlue;
+html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
 
-body{
-  background-color: dodgerblue;
-  font-family: 'Open Sans', sans-serif;
-}
+/*
+Style A Google Maps on your website with the style of your website.
 
-.loading{
-  position: absolute;
-  width: 110px;
-  top: 40%;
-  left: 35%;
-  margin-left: -35px;
-  margin-top: -12px;
-  
-  &:after, 
-  &:before{
-     position: absolute;
-  }
-  
-  &:after{
-    content: "Website";
-    font-size: 72px;
-    text-transform: uppercase;
-    font-weight: 800;
-    opacity: 0.06;
-    letter-spacing: 0.06em;
-    z-index: -1;
-    left:0;
-  }
-  
-  &:before{
-    content: "Please wait.";
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    color: @white;
-    width: 95px;
-    bottom: -80px;
-    left: 245px;
-  }
-}
+Here a quick example I did for a local physiotherapist (http://kine.sarabernaert.be/contact/).
+Parameters I personalised:
+- pointer (own image)
+- zoom control (position)
+- mapcontrol (street, sattelite, ..): disabled
+- map colors
 
-.text{
-  float: left;
-  color: @white;
-  font-size: 14px;
-  font-weight: 600;
-  margin-right: 2px;
-  letter-spacing: 0.06em;
-}
-
-.bomb{
-	border-radius: 50%;
-	background-color: @white;
-	display: block;
-	float: left;
-	margin: 5px 2px;
-	position: relative;
-  top: 5px;
-	height: 3px;
-	width: 3px;
-  animation: loading-bomb 1.2s infinite;
-  animation-timing-function: ease-in-out;
-  transform: translate3d(0, 0, 0);
-}
-
-.two{
-	animation-delay: 150ms;
-}
-
-.three{
-	animation-delay: 300ms;
-}
-
-@keyframes loading-bomb{
-	0% { height: 3px; width: 3px;}
-	25% { height: 7px; width: 7px;}
-	50% { height: 5px; width: 5px; }
-	100% { height: 3px; width: 3px; }
-}
+Sources to tweak your own map:
+- https://developers.google.com/maps/documentation/javascript/
+> all parameters you can put your hand on
+- https://snazzymaps.com
+>  nice website to give easily the color style a personal touch 
+-  http://stackoverflow.com/questions/8879544/google-maps-zoom-control
+> when the (zoom) controls are displayed distorted, read this thread
+*/
